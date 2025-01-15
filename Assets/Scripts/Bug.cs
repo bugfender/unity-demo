@@ -24,7 +24,7 @@ public class Bug : MonoBehaviour
 			{
                 
                 anim.SetTrigger("Jump");
-				rb2d.velocity = Vector2.zero;
+				rb2d.linearVelocity = Vector2.zero;
 				rb2d.AddForce(new Vector2(0, upForce));
                 rb2d.angularVelocity = 0f;
                 rb2d.rotation = 30f;
@@ -35,7 +35,7 @@ public class Bug : MonoBehaviour
 
 	void OnCollisionEnter2D(Collision2D other)
 	{
-		rb2d.velocity = Vector2.zero;
+		rb2d.linearVelocity = Vector2.zero;
         if (!isDead)
         {
             isDead = true;
