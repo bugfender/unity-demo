@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class Bug : MonoBehaviour 
@@ -22,7 +22,7 @@ public class Bug : MonoBehaviour
 		{
 			if (Input.GetMouseButtonDown(0)) 
 			{
-                
+                Bugfender.Log("Tap - jump");
                 anim.SetTrigger("Jump");
 				rb2d.linearVelocity = Vector2.zero;
 				rb2d.AddForce(new Vector2(0, upForce));

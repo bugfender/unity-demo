@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class ClickToStart : MonoBehaviour
@@ -12,8 +12,8 @@ public class ClickToStart : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
+            Bugfender.Log("User tapped - loading game scene");
             SceneManager.LoadScene(1);
-            Bugfender.SendIssue("BugfenderGame", "Start Game");
         }
     }
 }
